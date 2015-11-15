@@ -5,9 +5,6 @@
     ~/.bash_profile: bash_profile
     ~/.bashrc: bashrc
     ~/.gitconfig: gitconfig
-    ~/.ssh/config:
-        path: ssh/config
-        create: true
     ~/.tmux.conf: tmux.conf
     ~/.vimrc: vimrc
     ~/.zshrc: zshrc
