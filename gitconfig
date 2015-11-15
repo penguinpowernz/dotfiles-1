@@ -1,0 +1,19 @@
+[core]
+	excludesfile = /Users/james/.gitignore_global
+	editor = vim
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[user]
+	name = James Bowles
+	email = james.l.bowles@gmail.com
+[push]
+	default = current
+[alias]
+	fv = fetch -v
+  graph = log --graph --oneline --all
+[merge]
+	tool = opendiff
