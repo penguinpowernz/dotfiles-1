@@ -75,7 +75,7 @@ map <leader>{ :NERDTreeFind<CR>
 nmap <leader>tw :%s/\s\+$//e
 
 " Toggle pastemode
-set pastetoggle=<F2>
+set pastetoggle=<leader>p
 
 " disable arrow keys
 " map <up> <nop>

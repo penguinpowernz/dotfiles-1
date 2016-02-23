@@ -95,3 +95,4 @@ ctrlp() {
 zle -N ctrlp
 
 bindkey "^p" ctrlp
+source $(brew --prefix nvm)/nvm.sh
