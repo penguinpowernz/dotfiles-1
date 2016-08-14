@@ -17,3 +17,5 @@
   graph = log --graph --oneline --all
 [merge]
 	tool = opendiff
+[diff]
+	compactionHeuristic = true
