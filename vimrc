@@ -72,4 +72,4 @@ map <leader>[ :NERDTreeToggle<CR>
 map <leader>{ :NERDTreeFind<CR>
 
 " Toggle pastemode
-set pastetoggle=<leader>p
+map <leader>p :set paste!<CR>
