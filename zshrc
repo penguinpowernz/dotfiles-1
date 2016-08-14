@@ -79,6 +79,11 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ctags="`brew --prefix`/bin/ctags"
+alias dco="docker-compose"
+alias dcr="docker-compose run"
+alias dcu="docker-compose up"
+alias dcd="docker-compose down"
+alias dps="docker ps"
 
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 
