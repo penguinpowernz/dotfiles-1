@@ -39,6 +39,11 @@ Plug 'tpope/vim-surround'
 Plug 'kchmck/vim-coffee-script'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'scrooloose/nerdtree'
+" Snipets
+Plug 'MarcWeber/vim-addon-mw-utils'
+Plug 'tomtom/tlib_vim'
+Plug 'honza/vim-snippets'
+Plug 'garbas/vim-snipmate'
 call plug#end()
 
 colorscheme vividchalk
@@ -73,3 +78,6 @@ map <leader>{ :NERDTreeFind<CR>
 
 " Toggle pastemode
 map <leader>p :set paste!<CR>
+
+" Clear highlighting
+map <leader>n :noh<CR>
