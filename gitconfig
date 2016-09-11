@@ -19,3 +19,5 @@
 	tool = opendiff
 [diff]
 	compactionHeuristic = true
+[rerere]
+	enabled = true
