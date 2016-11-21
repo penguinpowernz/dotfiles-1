@@ -84,6 +84,7 @@ alias dcr="docker-compose run"
 alias dcu="docker-compose up"
 alias dcd="docker-compose down"
 alias dps="docker ps"
+alias myip='dig +short myip.opendns.com @resolver1.opendns.com'
 
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 
