@@ -81,3 +81,13 @@ map <leader>p :set paste!<CR>
 
 " Clear highlighting
 map <leader>n :noh<CR>
+
+" Strip whitespace on save
+fun! <SID>StripTrailingWhitespaces()
+    let l = line(".")
+    let c = col(".")
+    %s/\s\+$//e
+    call cursor(l, c)
+endfun
+ 
+autocmd FileType c,cpp,java,php,ruby,python autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
