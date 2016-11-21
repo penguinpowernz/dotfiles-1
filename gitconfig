@@ -15,6 +15,9 @@
 [alias]
 	fv = fetch -v
   graph = log --graph --oneline --all
+  ffs = flow feature start
+  frs = flow release start
+  frf = flow release finish
 [merge]
 	tool = opendiff
 [diff]
