@@ -8,17 +8,14 @@
     ~/.gitignore_global: gitignore_global
     ~/.tmux.conf: tmux.conf
     ~/.vimrc: vimrc
-    ~/.zshrc: zshrc
-    ~/.zshrc.pre-oh-my-zsh: zshrc.pre-oh-my-zsh
+    ~/.zshrc:
+      path: zshrc
+      force: true
+    ~/.zshrc.pre-oh-my-zsh:
+      path: zshrc.pre-oh-my-zsh
+      force: true
     ~/.rspec: rspec
     ~/.agignore: agignore
     ~/bin:
-        path: bin/
-        create: true
-
-
-- clean: ['~']
-
-- link:
-
-
+      path: bin/
+      create: true
