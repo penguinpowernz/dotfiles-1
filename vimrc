@@ -27,6 +27,13 @@ set numberwidth=5
 " http://stackoverflow.com/questions/16902317/vim-slow-with-ruby-syntax-highlighting
 set re=1
 
+" combined to ignore case when searching for lower case words: 'inner' - >
+" matches 'inner', 'INNER', and 'Inner'
+" case sensitive when upper case letter are used: 'Inner' ->
+" matches 'Inner' only
+set ignorecase
+set smartcase
+
 call plug#begin('~/.vim/bundle')
 Plug 'tpope/vim-vividchalk'
 Plug 'ctrlpvim/ctrlp.vim'
@@ -39,6 +46,7 @@ Plug 'tpope/vim-surround'
 Plug 'kchmck/vim-coffee-script'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'scrooloose/nerdtree'
+Plug 'mwise/vim-rspec-focus'
 " Snipets
 Plug 'MarcWeber/vim-addon-mw-utils'
 Plug 'tomtom/tlib_vim'
@@ -91,3 +99,12 @@ fun! <SID>StripTrailingWhitespaces()
 endfun
  
 autocmd FileType c,cpp,java,php,ruby,python autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
+
+" vim-rspec-focus
+:nnoremap <leader>ff :ToggleFocusTag<CR>
+:nnoremap <leader>fa :AddFocusTag<CR>
+:nnoremap <leader>fr :RemoveFocusTag<CR>
+:nnoremap <leader>fd :ToggleDescribeFocusTag<CR>
+:nnoremap <leader>fc :ToggleContextFocusTag<CR>
+:nnoremap <leader>fi :ToggleItFocusTag<CR>
+:nnoremap <leader>rf :RemoveAllFocusTags<CR>
