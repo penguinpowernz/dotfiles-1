@@ -14,7 +14,7 @@
 	default = current
 [alias]
 	fv = fetch -v
-  graph = log --graph --oneline --all
+  graph = log --graph --oneline --all --decorate
   ffs = flow feature start
   frs = flow release start
   frf = flow release finish
