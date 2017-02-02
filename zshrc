@@ -78,7 +78,13 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias ctags="`brew --prefix`/bin/ctags"
+
+if [[ `uname` == 'Darwin' ]]
+then
+  alias ctags="`brew --prefix`/bin/ctags"
+  [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
+fi
+
 alias dco="docker-compose"
 alias dcr="docker-compose run"
 alias dcu="docker-compose up"
@@ -86,14 +92,9 @@ alias dcd="docker-compose down"
 alias dps="docker ps"
 alias myip='dig +short myip.opendns.com @resolver1.opendns.com'
 
-[[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
-
 export PATH="$PATH:/usr/local/sbin"
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-
-export GOPATH=/Users/james/src/go
+export PATH="$PATH:$HOME/src/dotfiles/bin"
 export EDITOR=vim
-source ~/.bin/tmuxinator.zsh
 
 ctrlp() {
   </dev/tty vim -c CtrlP
@@ -101,4 +102,3 @@ ctrlp() {
 zle -N ctrlp
 
 bindkey "^p" ctrlp
-source $(brew --prefix nvm)/nvm.sh
