@@ -1,9 +1,15 @@
 - clean: ['~']
 
 - link:
-    ~/.profile: profile
-    ~/.bash_profile: bash_profile
-    ~/.bashrc: bashrc
+    ~/.profile:
+      path: profile
+      force: true
+    ~/.bash_profile:
+      path: bash_profile
+      force: true
+    ~/.bashrc:
+      path: bashrc
+      force: true
     ~/.gitconfig: gitconfig
     ~/.gitignore_global: gitignore_global
     ~/.tmux.conf: tmux.conf
