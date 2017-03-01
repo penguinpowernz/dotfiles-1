@@ -95,6 +95,7 @@ alias myip='dig +short myip.opendns.com @resolver1.opendns.com'
 export PATH="$PATH:/usr/local/sbin"
 export PATH="$PATH:$HOME/src/dotfiles/bin"
 export EDITOR=vim
+export LC_CTYPE=en_US.UTF-8
 
 ctrlp() {
   </dev/tty vim -c CtrlP
