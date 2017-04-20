@@ -90,6 +90,9 @@ map <leader>p :set paste!<CR>
 " Clear highlighting
 map <leader>n :noh<CR>
 
+" copy
+map <Leader>y :echo system('echo -n '.shellescape(@").' \| npaste')<CR>
+
 " Strip whitespace on save
 fun! <SID>StripTrailingWhitespaces()
     let l = line(".")

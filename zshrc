@@ -49,6 +49,8 @@ plugins=(git git-flow-avh)
 
 source $ZSH/oh-my-zsh.sh
 
+source /usr/local/share/chruby/chruby.sh
+
 # User configuration
 
 #export PATH="$PATH:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"

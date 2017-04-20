@@ -1,0 +1,6 @@
+#!/bin/bash
+cat - |
+sed 's/^\s*//' | # Leading whitespace
+sed 's/\s*$//' | # Trailing whitespace
+sed 's/\\$//'  | # Escaped newline
+nc 10.2.2.1 12888
