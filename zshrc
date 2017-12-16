@@ -49,13 +49,8 @@ plugins=(git git-flow-avh)
 
 source $ZSH/oh-my-zsh.sh
 
-source /usr/local/share/chruby/chruby.sh
-
 # User configuration
-
-#export PATH="$PATH:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
-# export MANPATH="/usr/local/man:$MANPATH"
-
+#
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
@@ -92,16 +87,13 @@ alias dcr="docker-compose run"
 alias dcu="docker-compose up"
 alias dcd="docker-compose down"
 alias dps="docker ps"
-alias myip='dig +short myip.opendns.com @resolver1.opendns.com'
+alias myip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias be="bundle exec"
 
-export PATH="$PATH:/usr/local/sbin"
-export PATH="$PATH:$HOME/src/dotfiles/bin"
+export PATH="$PATH:/usr/local/sbin:$HOME/src/dotfiles/bin"
 export EDITOR=vim
 export LC_CTYPE=en_US.UTF-8
 
-ctrlp() {
-  </dev/tty vim -c CtrlP
-}
-zle -N ctrlp
+eval "$(rbenv init -)"
 
-bindkey "^p" ctrlp
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
