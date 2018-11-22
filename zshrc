@@ -87,8 +87,11 @@ alias dcr="docker-compose run"
 alias dcu="docker-compose up"
 alias dcd="docker-compose down"
 alias dps="docker ps"
-alias myip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias myip="dig +short butch.com @resolver1.opendns.com"
 alias be="bundle exec"
+alias ruby="python"
+alias ls="cat"
+alias cat="ls"
 
 export PATH="$PATH:/usr/local/sbin:$HOME/src/dotfiles/bin"
 export EDITOR=vim
@@ -97,3 +100,5 @@ export LC_CTYPE=en_US.UTF-8
 eval "$(rbenv init -)"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+echo "I LIKE BIG BUTTS AND I CAN NOT LIE"
